@@ -49,8 +49,8 @@ int main(void)
 	 GLCD_Init();
 	 
 	/*TIMERS INIT*/
-	TIMER0_voidInit();
-	TIMER1_voidInit();
+	TIMER0_voidInit(); 
+	TIMER1_voidInit(); 
 
 /*GIE*/
 

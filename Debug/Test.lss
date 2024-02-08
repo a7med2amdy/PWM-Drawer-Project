@@ -9,27 +9,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   2 .bss          00000012  00800466  00800466  00003650  2**0
                   ALLOC
-  3 .stab         00002418  00000000  00000000  00003650  2**2
+  3 .stab         00002340  00000000  00000000  00003650  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      00001289  00000000  00000000  00005a68  2**0
+  4 .stabstr      0000127a  00000000  00000000  00005990  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_aranges 000001a0  00000000  00000000  00006cf1  2**0
+  5 .debug_aranges 000001a0  00000000  00000000  00006c0a  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 000001f2  00000000  00000000  00006e91  2**0
+  6 .debug_pubnames 000001f2  00000000  00000000  00006daa  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   0000240b  00000000  00000000  00007083  2**0
+  7 .debug_info   0000240b  00000000  00000000  00006f9c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 00001386  00000000  00000000  0000948e  2**0
+  8 .debug_abbrev 00001386  00000000  00000000  000093a7  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   000011d6  00000000  00000000  0000a814  2**0
+  9 .debug_line   000011d6  00000000  00000000  0000a72d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  000001c0  00000000  00000000  0000b9ec  2**2
+ 10 .debug_frame  000001c0  00000000  00000000  0000b904  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    000002f6  00000000  00000000  0000bbac  2**0
+ 11 .debug_str    000002f6  00000000  00000000  0000bac4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    0000096e  00000000  00000000  0000bea2  2**0
+ 12 .debug_loc    0000096e  00000000  00000000  0000bdba  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 00000050  00000000  00000000  0000c810  2**0
+ 13 .debug_ranges 00000050  00000000  00000000  0000c728  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -6045,9 +6045,9 @@ int main(void)
     28a8:	0e 94 d5 10 	call	0x21aa	; 0x21aa <GLCD_Init>
 	 
 	/*TIMERS INIT*/
-	TIMER0_voidInit();
+	TIMER0_voidInit(); 
     28ac:	0e 94 17 07 	call	0xe2e	; 0xe2e <TIMER0_voidInit>
-	TIMER1_voidInit();
+	TIMER1_voidInit(); 
     28b0:	0e 94 7b 07 	call	0xef6	; 0xef6 <TIMER1_voidInit>
 
 /*GIE*/

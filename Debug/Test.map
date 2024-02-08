@@ -72,7 +72,6 @@ LOAD ./MCAL/GIE/GIE_prog.o
 LOAD ./MCAL/EXTI/EXTI_program.o
 LOAD ./MCAL/DIO/DIO_prog.o
 LOAD ./HAL/GRLCD/GRLCD_Prg.o
-LOAD ./Test_prog.o
 LOAD ./main.o
 LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
@@ -245,7 +244,6 @@ LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .text          0x00000092        0x0 ./MCAL/EXTI/EXTI_program.o
  .text          0x00000092        0x0 ./MCAL/DIO/DIO_prog.o
  .text          0x00000092        0x0 ./HAL/GRLCD/GRLCD_Prg.o
- .text          0x00000092        0x0 ./Test_prog.o
  .text          0x00000092        0x0 ./main.o
  .text          0x00000092        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .text          0x00000092        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -444,7 +442,6 @@ LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .data          0x00800060        0x0 ./MCAL/EXTI/EXTI_program.o
  .data          0x00800060        0x0 ./MCAL/DIO/DIO_prog.o
  .data          0x00800060        0x3 ./HAL/GRLCD/GRLCD_Prg.o
- .data          0x00800063        0x0 ./Test_prog.o
  .data          0x00800063      0x11b ./main.o
  .data          0x0080017e        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .data          0x0080017e        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -493,7 +490,6 @@ LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .bss           0x00800466        0x0 ./MCAL/EXTI/EXTI_program.o
  .bss           0x00800466        0x0 ./MCAL/DIO/DIO_prog.o
  .bss           0x00800466        0x0 ./HAL/GRLCD/GRLCD_Prg.o
- .bss           0x00800466        0x0 ./Test_prog.o
  .bss           0x00800466        0x0 ./main.o
  .bss           0x00800466        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .bss           0x00800466        0x0 e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -567,7 +563,7 @@ LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x2418
+.stab           0x00000000     0x2340
  *(.stab)
  .stab          0x00000000      0x48c ./MCAL/TMR/TMR_program.o
  .stab          0x0000048c      0x138 ./MCAL/GIE/GIE_prog.o
@@ -578,14 +574,12 @@ LOAD e:/dawnloads/sdk/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                                 0x63c (size before relaxing)
  .stab          0x0000105c      0xd68 ./HAL/GRLCD/GRLCD_Prg.o
                                 0xd74 (size before relaxing)
- .stab          0x00001dc4       0xd8 ./Test_prog.o
-                                 0xe4 (size before relaxing)
- .stab          0x00001e9c      0x57c ./main.o
+ .stab          0x00001dc4      0x57c ./main.o
                                 0x7b0 (size before relaxing)
 
-.stabstr        0x00000000     0x1289
+.stabstr        0x00000000     0x127a
  *(.stabstr)
- .stabstr       0x00000000     0x1289 ./MCAL/TMR/TMR_program.o
+ .stabstr       0x00000000     0x127a ./MCAL/TMR/TMR_program.o
 
 .stab.excl
  *(.stab.excl)
